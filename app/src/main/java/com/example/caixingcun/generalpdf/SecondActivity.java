@@ -86,7 +86,7 @@ public class SecondActivity extends AppCompatActivity {
     private void convertPdf() {
         try {
             Log.d("tag", "start");
-            String pdfPath = "file:///android_asset/test.pdf";
+       //     String pdfPath = "file:///android_asset/test.pdf";
             InputStream open = mContext.getClass().getClassLoader().getResourceAsStream("assets/test2.pdf");
             PdfReader reader = new PdfReader(open);
             Log.d("tag", "1step");
