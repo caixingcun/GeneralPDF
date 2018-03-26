@@ -27,7 +27,14 @@
    
    5.acrobat下载地址
    
-   http://www.downza.cn/soft/20562.html
+   http://www.downza.cn/soft/20562.html
 
+# 效果图
+## MainActivity中手动创建pdf
+![avatar](https://github.com/caixingcun/GeneralPDF/blob/master/app/kuangtiecheng1.png)
+## SecondActivity中pdf模版
 
-   
+![avatar](https://github.com/caixingcun/GeneralPDF/blob/master/app/test2pdf_before.png)
+## SecondActivity 中模板经过 表单填充后的 pdf
+![avatar](https://github.com/caixingcun/GeneralPDF/blob/master/app/test2pdf_after.png)
+
