@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Button
         android:text="获取pdf 填充 内容 生成pdf"
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:text="发送pdf"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="预览"
+        app:layout_constraintTop_toBottomOf="@+id/btn_1"
+        android:id="@+id/btn_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        app:layout_constraintTop_toBottomOf="@id/btn_preview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </android.support.constraint.ConstraintLayout>
